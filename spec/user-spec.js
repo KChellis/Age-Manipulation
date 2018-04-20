@@ -11,9 +11,12 @@ describe("User", function() {
     expect(seconds).toBeCloseTo(1023177222, -6);
   });
 
-  it ("should calculate number of Mercury years a person has lived", function () {
+  it ("should calculate number of planet years a person has lived", function () {
     let planets = user.planetYears();
-    expect(planets[0]).toBeCloseTo(134.6, -1);
+    let pyears = [134.6, 52.7, 32.4, 17.2, 2.7, 1.1, 0.38, 0.19, 0.13];
+    for (var i = 0; i < 9; i++) {
+      expect(planets[i]).toBeCloseTo(pyears[i], -1);
+    }
   });
 
 });
