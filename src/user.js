@@ -11,7 +11,7 @@ class User {
   getSeconds() {
     let milliseconds =this.today.getTime() - this.birthday.getTime();
     let seconds = milliseconds / 1000;
-    return seconds;
+    return seconds.toFixed();
   }
   planetYears() {
     let planets = [];
@@ -34,14 +34,13 @@ class User {
     }else {
       timeLeft = female[index] - this.years;
     }
-    return timeLeft;
+    return timeLeft.toFixed(1);
   }
   animalLife() {
-    // let animals = ["dog", "cat", "mayfly", "panda", "killer whale", "parrot", "tortoise"];
     let lifeExpectancies = [11.5, 15.1, 9.51294e-6, 20, 29, 50, 100];
     let lifetimes = [];
     for (var i = 0; i < lifeExpectancies.length; i++) {
-      lifetimes.push(this.years/lifeExpectancies[i]);
+      lifetimes.push((this.years/lifeExpectancies[i]).toFixed(2));
     }
     return lifetimes;
   }

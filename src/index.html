@@ -19,6 +19,10 @@
             <input class="form-control" id="birthday" type="date" name="birthday" value="">
           </div>
           <div class="form-group">
+            <label for="time">What time were you born? (If you aren't sure, guess.)</label>
+            <input class="form-control" id="time" type="time" name="birthday" value="">
+          </div>
+          <div class="form-group">
             <label for="sex">What is your sex?</label>
             <select id="sex" class="form-control" name="sex">
               <option value="" selected disabled hidden></option>
@@ -39,10 +43,16 @@
       </div>
       <div class="results">
         <h2 class="name">:</h2>
+        <h3 id="seconds"></h3>
+        <h5>Planets:</h5>
         <ul id="planets">
 
         </ul>
         <h3 id="life"></h3>
+        <h5>You have lived:</h5>
+        <ul id="animals" >
+
+        </ul>
 
       </div>
     </div>
