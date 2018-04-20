@@ -11,5 +11,12 @@ class User {
     let seconds = milliseconds / 1000
     return seconds;
   }
+  planetYears() {
+    let planets = [];
+    const secondsInYear = (365 * 24 * 60 * 60);
+    let years = this.getSeconds() / secondsInYear;
+    planets.push(years/.24);
+    return planets;
+  }
 }
 export { User };

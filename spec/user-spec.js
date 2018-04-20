@@ -13,7 +13,7 @@ describe("User", function() {
 
   it ("should calculate number of Mercury years a person has lived", function () {
     let planets = user.planetYears();
-    expect(planets[0]).toEqual(134.6);
+    expect(planets[0]).toBeCloseTo(134.6, -1);
   });
-  
+
 });
