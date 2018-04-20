@@ -19,4 +19,9 @@ describe("User", function() {
     }
   });
 
+  it ("should calculate person's life expectancy", function() {
+    let life = user.lifeExpectancy();
+    expect(life).toBeCloseTo(49.4, -1);
+  });
+
 });
