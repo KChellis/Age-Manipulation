@@ -9,14 +9,16 @@ $(function() {
     event.preventDefault();
     let name = $("#name").val();
     let sex = $("#sex").val();
+    let states = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT",  "VA", "WA", "WV", "WI", "WY"];
     let state = $("#state").val().toUpperCase();
+    let index = states.indexOf(state);
     let time = $("#time").val().split(":");
     let date = $("#birthday").val().split("-");
     let year = parseInt(date[0]);
     let month = parseInt(date[1]) - 1;
     let day = parseInt(date[2]);
     let birthday = new Date(year, month, day, time[0], time[1]);
-    let user = new User(name, birthday, sex, state);
+    let user = new User(name, birthday, sex, index);
     let seconds = user.getSeconds();
     let planetYrs = user.planetYears();
     let life = user.lifeExpectancy();
