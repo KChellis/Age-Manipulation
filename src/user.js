@@ -19,7 +19,7 @@ class User {
     let planetToEarth = [.24, 0.62, 1, 1.88, 11.86, 29.4, 84.3, 164.79, 248.09];
     this.years = this.getSeconds() / secondsInYear;
     for (var i = 0; i < 9; i++) {
-      planets.push(this.years/planetToEarth[i]);
+      planets.push((this.years/planetToEarth[i]).toFixed(2));
     }
     return planets;
   }

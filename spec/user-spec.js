@@ -36,8 +36,7 @@ describe("User", function() {
       }else {
         precision = 2;
       }
-      expect(lifetimes[i]).toBeCloseTo(goal[i], precision);
-    }
+      expect(lifetimes[i]
   });
 
 });
