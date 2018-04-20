@@ -14,8 +14,11 @@ class User {
   planetYears() {
     let planets = [];
     const secondsInYear = (365 * 24 * 60 * 60);
+    let planetToEarth = [.24, 0.62, 1, 1.88, 11.86, 29.4, 84.3, 164.79, 248.09];
     let years = this.getSeconds() / secondsInYear;
-    planets.push(years/.24);
+    for (var i = 0; i < 9; i++) {
+      planets.push(years/planetToEarth[i]);
+    }
     return planets;
   }
 }
