@@ -15,6 +15,7 @@ _This page takes a users inputted birthdate and calcualtes their current age on 
 | **Program will calculate number of Mercury years a person has lived  ** | User input: November 17, 1985  | Output: 134.6 |
 | **Program will calculate number of other planets years a person has lived  ** | User input: November 17, 1985  | Output: [134.6, 52.7, 32.4, 17.2, 2.7, 1.1, 0.38, 0.19, 0.13] |
 | **Program will calculate person's life expectancy  ** | User input: November 17, 1985, female, Oregon | Output: 81.8 |
+| **Program will calculate number of other animal lifetimes user has lived  ** | User input: November 17, 1985, female, Oregon | Output: [] |
 
 
 
