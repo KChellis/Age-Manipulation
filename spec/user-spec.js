@@ -10,4 +10,10 @@ describe("User", function() {
     let seconds = user.getSeconds();
     expect(seconds).toBeCloseTo(1023177222, -6);
   });
+
+  it ("should calculate number of Mercury years a person has lived", function () {
+    let planets = user.planetYears();
+    expect(planets[0]).toEqual(134.6);
+  });
+  
 });
