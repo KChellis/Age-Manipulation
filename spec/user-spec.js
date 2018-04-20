@@ -23,8 +23,8 @@ describe("User", function() {
     expect(life).toBeCloseTo(49.4, -1);
   });
 
-  it ("should calculate number of other animal lifetimes user has lived" function() {
-    let goal = [2.8, 2.1, 12614317, 1.6, 1.1, 0.64, 0.324]
+  it ("should calculate number of other animal lifetimes user has lived", function() {
+    let goal = [2.8, 2.1, 3410687, 1.6, 1.1, 0.65, 0.324];
     let lifetimes = user.animalLife();
 
     for (var i = 0; i < lifetimes.length; i++) {

@@ -2,11 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Age manipulator</title>
   </head>
   <body>
     <div class="container">
-      <input type="state" name="" value="">
+      <h1>Age manipulator</h1>
+      <div class="form">
+        <h3>Enter your information below to find out your age on other planets and other interesting facts:</h3>
+        <form class="formOne" action="index.html" method="post">
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input class="form-control" id="name" type="text" name="name" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="birthday">What is your Birthdate?</label>
+            <input class="form-control" id="birthday" type="date" name="birthday" value="">
+          </div>
+          <div class="form-group">
+            <label for="sex">What is your sex?</label>
+            <select id="sex" class="form-control" name="sex">
+              <option value="" selected disabled hidden></option>
+              <option value="Female">Female</option>
+              <option value="male">Male</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="state">What state are you from?</label>
+            <input class="form-control" id="state" type="text" name="state" placeholder="Enter the two letter code" maxlength="2">
+          </div>
+
+
+
+
+          <button type="submit" name="button">How old am I?</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

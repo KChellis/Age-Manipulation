@@ -38,7 +38,7 @@ class User {
   }
   animalLife() {
     // let animals = ["dog", "cat", "mayfly", "panda", "killer whale", "parrot", "tortoise"];
-    let lifeExpectancies = [11.5, 15.1, 0.0000019026, 20, 29, 50, 100];
+    let lifeExpectancies = [11.5, 15.1, 9.51294e-6, 20, 29, 50, 100];
     let lifetimes = [];
     for (var i = 0; i < lifeExpectancies.length; i++) {
       lifetimes.push(this.years/lifeExpectancies[i]);
