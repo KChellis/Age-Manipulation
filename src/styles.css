@@ -1,6 +1,24 @@
+body {
+  text-align: center;
+  color: #dbe8fc;
+  background-color: #003254;
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+}
 .results {
   display: none;
 }
 .form-group {
   margin: 5px;
+}
+.name, .planets {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 20px;
+}
+button {
+  background-color: #024c7f;
 }

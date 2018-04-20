@@ -41,4 +41,8 @@ $(function() {
       $("#animals").append(`<li>${animalYrs[j]} ${animals[j]} lifetimes</li>`);
     }
   });
+
+  $("#reload").click(function() {
+    location.reload();
+  })
 });
