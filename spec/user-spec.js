@@ -23,7 +23,7 @@ describe("User", function() {
     expect(life).toBeCloseTo(49.4, -1);
   });
 
-  it ("should number of other animal lifetimes user has lived" function() {
+  it ("should calculate number of other animal lifetimes user has lived" function() {
     let goal = [2.8, 2.1, 12614317, 1.6, 1.1, 0.64, 0.324]
     let lifetimes = user.animalLife();
 
@@ -36,7 +36,7 @@ describe("User", function() {
       }else {
         precision = 2;
       }
-      expect(lifetimes[i]).toBeCloseTo(goal[i],precision);
+      expect(lifetimes[i]).toBeCloseTo(goal[i], precision);
     }
   });
 
