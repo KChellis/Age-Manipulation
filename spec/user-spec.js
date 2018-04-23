@@ -2,7 +2,7 @@ import { User } from './../src/user.js';
 
 describe("User", function() {
   let birthday = new Date(1985, 10, 17);
-  let user = new User("Kristen", birthday, "female", "OR");
+  let user = new User("Kristen", birthday, "female", 37);
 
 
   it ("should calculate number of seconds a person has lived", function() {
@@ -30,13 +30,14 @@ describe("User", function() {
     for (var i = 0; i < lifetimes.length; i++) {
       let precision;
       if (lifetimes[i] >100000) {
-        precision = -3;
+        precision = -5;
       }else if (lifetimes[i] > 1) {
         precision = 1;
       }else {
         precision = 2;
       }
-      expect(lifetimes[i]
+      expect(lifetimes[i]).toBeCloseTo(goal[i], precision);
+    }
   });
 
 });
