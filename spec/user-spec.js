@@ -7,12 +7,12 @@ describe("User", function() {
 
   it ("should calculate number of seconds a person has lived", function() {
     let seconds = user.getSeconds();
-    expect(seconds).toBeCloseTo(1023177222, -6);
+    expect(seconds).toBeCloseTo(1023994937, -6);
   });
 
   it ("should calculate number of planet years a person has lived", function () {
     let planets = user.planetYears();
-    let pyears = [134.6, 52.7, 32.4, 17.2, 2.7, 1.1, 0.38, 0.19, 0.13];
+    let pyears = [135.2, 52.3, 32.4, 17.2, 2.7, 1.1, 0.38, 0.19, 0.13];
     for (var i = 0; i < 9; i++) {
       expect(planets[i]).toBeCloseTo(pyears[i], -1);
     }
@@ -24,7 +24,7 @@ describe("User", function() {
   });
 
   it ("should calculate number of other animal lifetimes user has lived", function() {
-    let goal = [2.8, 2.1, 3410687, 1.6, 1.1, 0.65, 0.324];
+    let goal = [2.8, 2.1, 3413315, 1.6, 1.1, 0.65, 0.324];
     let lifetimes = user.animalLife();
 
     for (var i = 0; i < lifetimes.length; i++) {
